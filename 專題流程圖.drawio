@@ -16,7 +16,7 @@
         <mxCell id="5" value="撰寫程式碼取得幣安虛擬貨幣資料" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
           <mxGeometry x="200" y="430" width="230" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="NOGGrgphoq70URqEMFDg-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="8">
+        <mxCell id="NOGGrgphoq70URqEMFDg-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7" target="8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7" value="確認資料正確性" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
@@ -28,7 +28,7 @@
         <mxCell id="10" value="整合K線圖API" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
           <mxGeometry x="252" y="760" width="126" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="NOGGrgphoq70URqEMFDg-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="11" target="12">
+        <mxCell id="NOGGrgphoq70URqEMFDg-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="11" target="12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="11" value="顯示K線圖" style="rounded=1;arcSize=20;strokeWidth=2" parent="1" vertex="1">
@@ -69,6 +69,18 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="k90tg-uZU3GgZhVsvzet-21" value="文字雲" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k90tg-uZU3GgZhVsvzet-22" value="PowerBI" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="570" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k90tg-uZU3GgZhVsvzet-23" value="資料預測" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="890" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="k90tg-uZU3GgZhVsvzet-24" value="互動儀表板" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="690" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
