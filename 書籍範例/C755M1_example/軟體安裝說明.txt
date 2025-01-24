@@ -1,0 +1,2 @@
+軟體安裝說明：
+https://medium.com/python4u/anaconda介紹及安裝教學-f7dae6454ab6
