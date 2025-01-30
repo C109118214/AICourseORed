@@ -6,6 +6,6 @@ Web site created using create-react-app
 [下午 04:24]
 ```
 帳號。aifintechst23@nkust.edu.tw
-密碼。 19911223 (已編輯)
+密碼。 19911223 
 ```
 一月 20, 2025
