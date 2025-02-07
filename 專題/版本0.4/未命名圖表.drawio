@@ -125,7 +125,7 @@
         <mxCell id="fYwi1ue1L-R9f55LKfn9-31" value="主運算程式" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="275" y="10" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fYwi1ue1L-R9f55LKfn9-32" value="選擇時間間隔與MA週期，選擇&quot;載入數據&quot;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-32" value="選擇時間間隔與MA週期，按下&quot;載入數據&quot;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-40" y="170" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fYwi1ue1L-R9f55LKfn9-34" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-36" target="fYwi1ue1L-R9f55LKfn9-33">
@@ -294,7 +294,7 @@
         </mxCell>
         <mxCell id="fYwi1ue1L-R9f55LKfn9-74" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="fYwi1ue1L-R9f55LKfn9-73">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="940" y="570" as="sourcePoint" />
+            <mxPoint x="940" y="610" as="sourcePoint" />
             <mxPoint x="940" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -331,6 +331,64 @@
         </mxCell>
         <mxCell id="fYwi1ue1L-R9f55LKfn9-82" value="海龜策略" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1080" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-83" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="350" as="sourcePoint" />
+            <mxPoint x="1110" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-85" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-79" target="fYwi1ue1L-R9f55LKfn9-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1110" y="100" as="sourcePoint" />
+            <mxPoint x="1110" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-84" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="160" width="35" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-86" value="選擇時間間隔，&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;按下&quot;載入數據&quot;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="170" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-87" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-17" target="fYwi1ue1L-R9f55LKfn9-84">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="350" as="sourcePoint" />
+            <mxPoint x="650" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-88" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-84" target="fYwi1ue1L-R9f55LKfn9-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="350" as="sourcePoint" />
+            <mxPoint x="650" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-89">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-89" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="250" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-91" value="計算ADX並且讀取選擇的時間間隔" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1141" y="255" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-92" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="345" width="40" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-93" value="收到ADX/時間間隔和買賣計算後回傳結果" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="365" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYwi1ue1L-R9f55LKfn9-94" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="fYwi1ue1L-R9f55LKfn9-92" target="fYwi1ue1L-R9f55LKfn9-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="350" as="sourcePoint" />
+            <mxPoint x="680" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="378" />
+              <mxPoint x="1010" y="570" />
+              <mxPoint x="140" y="570" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
