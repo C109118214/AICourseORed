@@ -60,3 +60,4 @@ plt.plot(dfAAPL3y[dfAAPL3y['Signal'] == -1]['Close'], 'v', markersize=8, color='
 績效計算：根據策略回報率計算累積回報，評估策略表現。
 這樣的設定能幫助你在不同市場條件下根據趨勢強度來做出交易決策，並且能夠計算策略的回報率，進行績效評估。
 
+![image](https://github.com/user-attachments/assets/8e289526-bb76-4529-9d89-a43f1a2ec6ac)
