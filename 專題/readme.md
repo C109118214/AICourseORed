@@ -1,3 +1,7 @@
+初始使用者介面
+![image](https://github.com/user-attachments/assets/c3ebc041-64d8-4350-b87f-e28d68499c76)
+
+初階流程圖
 ![image](https://github.com/user-attachments/assets/592c8166-d8f7-44f9-bd08-8276fcba9dcb)
 
 400dpi畫質調整
