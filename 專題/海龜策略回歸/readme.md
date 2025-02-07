@@ -1,1 +1,62 @@
+![image](https://github.com/user-attachments/assets/fa79e1e1-9327-4c0b-8d70-63c27d808f8d)
+
+## 這段程式碼是實現海龜交易策略（Turtle Trading Strategy）的核心部分，通過計算一些技術指標來確定何時進場（買入）或平倉（賣出），並根據這些信號來進行回測交易。下面我會詳細解釋買進賣出的設置及如何計算累積報酬率等指標。
+
+### 1. 海龜策略的基本原則：
+海龜策略是由理查德·丹尼斯（Richard Dennis）和威廉·埃卡特（William Eckhardt）所發展的一種交易策略。這個策略的核心是基於技術指標來做出交易決策，主要涉及以下幾個步驟：
+
+進場信號：當市場趨勢變強時，進行買入。
+出場信號：當市場趨勢反轉或變弱時，賣出。
+在這段程式碼中，使用了 ADX（Average Directional Index） 和 ATR（Average True Range） 兩個指標來確定趨勢的強度和波動幅度。
+
+### 2. 進場與出場條件：
+進場條件：當 ADX 指標突破某個預設的門檻值（如 25），且前一日的 ADX 值不高於該門檻時，表示市場出現強趨勢，此時進場做多（即買入）。
+```python
+if dfAAPL3y['ADX'][i] > entry_threshold and dfAAPL3y['ADX'][i-1] <= entry_threshold:
+    dfAAPL3y['Position'][i] = 1  # 做多
+    dfAAPL3y['Signal'][i] = 1    # 買進信號
+```
+出場條件：當 ADX 值跌破某個預設的門檻值（如 20），且前一日的 ADX 值高於該門檻時，表示市場趨勢變弱，這時平倉（即賣出）。
+```python
+elif dfAAPL3y['ADX'][i] < exit_threshold and dfAAPL3y['ADX'][i-1] >= exit_threshold:
+    dfAAPL3y['Position'][i] = -1  # 平倉
+    dfAAPL3y['Signal'][i] = -1   # 賣出信號
+```
+3. 交易績效計算：
+在這段程式碼中，計算了策略的累積報酬率（Cumulative Returns），這是評估策略表現的常見方式。具體流程如下：
+
+每日回報率（Returns）：這是股票或資產的價格變化百分比，即每日收盤價與前一日收盤價之間的變動。
+
+```python
+dfAAPL3y['Returns'] = dfAAPL3y['Close'].pct_change()
+策略回報率（Strategy_Returns）：根據海龜策略的持倉情況計算的回報率。這是根據當天的持倉狀況（做多或做空）來乘以當天的價格變動百分比。
+```
+```python
+dfAAPL3y['Strategy_Returns'] = dfAAPL3y['Position'].shift(1) * dfAAPL3y['Returns']
+```
+shift(1) 是因為策略的持倉是根據前一天的信號決定的，這樣我們可以確保交易信號在次日才生效。
+累積報酬率：這是將每天的策略回報率累積起來，得到的總回報率。累積回報率反映了策略在整個回測期間的表現。
+
+```python
+
+cumulative_returns = (1 + dfAAPL3y['Strategy_Returns']).cumprod()
+```
+這裡使用 cumprod() 函數將每日回報率累積，表示如果你從第一天開始執行這個策略，最終的回報是多少。
+
+### 4. K 線圖與買賣信號顯示：
+程式碼中的買入和賣出信號是根據海龜策略的 Signal 欄位生成的，這些信號在 K 線圖上以綠色和紅色三角形標記來表示買入（^）和賣出（v）的時機。
+
+買入信號（綠色上三角形）：當 Signal 欄位為 1 時，顯示在該日期的收盤價位置。
+賣出信號（紅色下三角形）：當 Signal 欄位為 -1 時，顯示在該日期的收盤價位置。
+```python
+plt.plot(dfAAPL3y[dfAAPL3y['Signal'] == 1]['Close'], '^', markersize=8, color='g', label='買入訊號')  # 買入訊號
+plt.plot(dfAAPL3y[dfAAPL3y['Signal'] == -1]['Close'], 'v', markersize=8, color='r', label='賣出訊號')  # 賣出訊號
+```
+5. 最終效果：
+當我們執行這段程式碼後，會看到 K 線圖上標註了每次的買入和賣出信號，並計算出策略的累積回報率。這樣我們可以評估海龜策略在過去某段時間內的表現。
+總結：
+進場信號：基於 ADX 指標突破指定門檻（如 25）時，市場趨勢強，進場做多。
+出場信號：基於 ADX 指標跌破指定門檻（如 20）時，市場趨勢弱，平倉。
+績效計算：根據策略回報率計算累積回報，評估策略表現。
+這樣的設定能幫助你在不同市場條件下根據趨勢強度來做出交易決策，並且能夠計算策略的回報率，進行績效評估。
 
